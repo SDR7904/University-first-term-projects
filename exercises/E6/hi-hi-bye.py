@@ -2,9 +2,8 @@ n = int(input())
 guys = list(input().split())
 
 # say hi loop
-for i in range(n):
-    if i > 0:
-        for j in range(i):
+for i in range(1, n):
+        for j in range(i-1,-1,-1):
             print(f"{guys[i]}: salam {guys[j]}!")
 # say bye loop
 for i in range(n):
